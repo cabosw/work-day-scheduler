@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,10 +29,53 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <div class="row hour">
+        <div class="col-2">9AM</div>
+        <textarea class ="col-8 timeBlock" data-hour="9" id="9"></textarea>
+        <button class="col-2 saveBtn fas fa-save " id="9"></button>
+      </div>
+      <div class="row hour" data-hour='10'>
+        <div class="col-2" >10AM</div>
+        <textarea class="col-8 timeBlock" data-hour="10" id="10"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="10"></button>
+      </div>
+      <div class="row hour" data-hour='11'>
+        <div class="col-2" data-hour="11" >11AM</div>
+        <textarea class="col-8 timeBlock" data-hour="11" id="11"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="11"></button>
+      </div>
+      <div class="row hour">
+        <div class="col-2">12PM</div>
+        <textarea class="col-8 timeBlock" data-hour="12" id="12"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="12"></button>
+      </div>
+      <div class="row hour" >
+        <div class="col-2">1PM</div>
+        <textarea class="col-8 timeBlock" data-hour="13" id="13" ></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="13"></button>
+      </div>
+      <div class="row hour" >
+        <div class="col-2">2PM</div>
+        <textarea class="col-8 timeBlock" data-hour="14" id="14"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="14"></button>
+      </div>
+      <div class="row hour">
+        <div class="col-2">3PM</div>
+        <textarea class="col-8 timeBlock" data-hour="15" id="15"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="15"></button>
+      </div>
+      <div class="row hour">
+        <div class="col-2">4PM</div>
+        <textarea class="col-8 timeBlock" data-hour='16' id="16"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id="16"></button>
+      </div>
+      <div class="row hour">
+        <div class="col-2">5PM</div>
+        <textarea class="col-8 timeBlock" data-hour="17" id="17"></textarea>
+        <button class='col-2 saveBtn fas fa-save' id='17'></button>
+      </div>
+    <script src="./assets/script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
   </body>
 </html>
